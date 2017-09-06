@@ -1,0 +1,71 @@
+#!/bin/bash
+
+#
+# Custom system script
+# Copyright © 2017, Zackie_Ai  "zac6ix"
+# <zac6ix@gmail.com>
+#
+#Android_Matrix_Development
+#DroidPeepz™ Inc
+
+#start
+START(){
+clear
+echo -e "                        \033[0;34m "
+cecho P"" "                     \e[4m*||_http://www.droidpeepz.xyz_||*"
+echo
+cecho P ""  "                     \e[7m================================="
+cecho C ""  "                    \e[7m===!! .Android System Script. !!==="
+cecho G "" "                                     \e[7mFor"
+cecho C "" "                                \e[7m*..MediaTek*"
+echo
+echo "                     ========*****************========"
+cecho G ""  "                          ---> DroidPeepz™ Inc    "
+cecho P ""  "                          ---> by : Zackie Ai   "
+echo "                     ========*****************========"
+cecho Y "" "                      **ANDROID MATRIX DEVELOPMENT**"
+cecho P ""  "                     \e[7m^^^^====****=========****====^^^^"
+echo
+echo
+echo
+CT="$(date +"%r")"
+DT="$(date +"%b-%d-%Y")"
+cecho B "" "            \e[7m\e[3mMenu" "                        \033[0;36m\e[3m|| Time : $CT"
+cecho C "" "            \e[3mHost System : $HOSTNAME" "          \033[0;36m\e[3m|| Date : $DT"
+}
+
+# Colors
+cecho ()
+   {
+   #Case didn't work out for me in cygwin
+   if [ "$1" == "R" ]
+then
+  echo -e "$2""\033[0;91m$3\033[0m""$4" # Red
+elif  [ "$1" == "G" ]
+then
+  echo -e "$2""\033[0;92m$3\033[0m""$4" # Green
+elif  [ "$1" == "Y" ]
+then
+  echo -e "$2""\033[0;93m$3\033[0m""$4" # Yellow
+elif  [ "$1" == "B" ]
+then
+  echo -e "$2""\033[0;94m$3\033[0m""$4" # Blue
+elif  [ "$1" == "P" ]
+then
+  echo -e "$2""\033[0;95m$3\033[0m""$4" # Purple
+elif  [ "$1" == "C" ]
+then
+  echo -e "$2""\033[0;96m$3\033[0m""$4" # Cyan
+elif  [ "$1" == "W" ]
+then
+  echo -e "$2""\033[0;97m$3\033[0m""$4" # White
+ fi
+}
+
+blue='\033[0;34m'
+cyan='\033[0;36m'
+yellow='\033[0;33m'
+red='\033[0;31m'
+nocol='\033[0m'
+
+START
