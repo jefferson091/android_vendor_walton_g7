@@ -13,4 +13,4 @@ PRODUCT_COPY_FILES := \
 # Pick up overlay for features that depend on non-open-source files
 #DEVICE_PACKAGE_OVERLAYS := vendor//w2/overlay
 
-$(call inherit-product, vendor/walton/g7/g7-vendor-blobs.mk)
+$(call inherit-product, vendor/tcl/4034X/4034X-vendor-blobs.mk)
